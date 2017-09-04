@@ -25,6 +25,7 @@
                         <span v-on:dblclick="curId = index">{{item.name}}</span>
                         <span class="close" v-on:click="deleteList(index)">X</span>
                     </div>
+                    <input type="text" class="text2" v-model="item.name" v-on:keyup.esc="cancelEdit(item)" v-on:blur="editBefore(item.name)" v-on:keyup.enter="edited" />
                 </li>
             </ul>
         </div>
