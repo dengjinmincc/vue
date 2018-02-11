@@ -9,7 +9,12 @@ export default new Router({
     {
       path: '/',
       name: 'Layouts',
-      component: Layouts
+      component: Layouts,
+      children: [{
+        path: '/todo/:id',
+        name: 'todo',
+        component: todo
+      }]
     }
   ]
 })

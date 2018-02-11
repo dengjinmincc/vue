@@ -26,11 +26,7 @@
                 <span class="icon-add"></span>
             </div>
         </nav>
-        <div class="content-scrollable list-items">
-            <div v-for="item in items">
-                <item :item="item"></item>
-            </div>
-        </div>
+        <div class="content-scrollable list-items"></div>
     </div>
 </template>
 
@@ -46,9 +42,6 @@
                     locked: false
                 },
                 items: [
-                    { checked: false, text: '新的一天', isDelete: false },
-                    { checked: false, text: '新的一天', isDelete: false },
-                    { checked: false, text: '新的一天', isDelete: false }
                 ],
                 text: ''
             }
